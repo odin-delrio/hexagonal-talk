@@ -4,5 +4,5 @@ interface FeesRepository {
 
     fun save(fee: Fee)
 
-    fun deleteFee(feeId: FeeId)
+    fun delete(feeId: FeeId)
 }

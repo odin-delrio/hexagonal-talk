@@ -10,6 +10,6 @@ class CancelFeeService(
     fun cancelFee(feeId: String, principal: Principal) {
         principal.requireSuperUser()
 
-        feesRepository.deleteFee(FeeId(feeId))
+        feesRepository.delete(FeeId(feeId))
     }
 }
