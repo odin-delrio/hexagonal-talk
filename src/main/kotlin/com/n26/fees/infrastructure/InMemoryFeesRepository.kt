@@ -11,4 +11,8 @@ class InMemoryFeesRepository: FeesRepository {
     override fun save(fee: Fee) {
         store[fee.id] = fee
     }
+
+    override fun deleteFee(feeId: FeeId) {
+        store.remove(feeId)
+    }
 }
