@@ -12,7 +12,7 @@ class InMemoryFeesRepository: FeesRepository {
         store[fee.id] = fee
     }
 
-    override fun deleteFee(feeId: FeeId) {
+    override fun delete(feeId: FeeId) {
         store.remove(feeId)
     }
 }
